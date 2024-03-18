@@ -1,4 +1,14 @@
-# Intune Compliance
+# Intune Custom Compliance Policies
+
+## The Intune Custom Compliance Policy Repository
+
+This repository contains detection/discovery scripts and JSON files for Microsoft Intune *Custom* comppliance scripts and policies. Each Custom compliance contains the following artifacts.
+
+| Artifact | Description |
+| ---------|-------------|
+| CustomCompliance.md | Description of the custom compliance with references to the detection script and compliance validation JSON file |
+| CustomCompliance-.ps | PowerShell detection script |
+| CustomCompliance-.json |  a JSON file that identifies the settings and value pairs that you want to use for custom compliance.|
 
 ## Microsoft Intune custom compliance policies
 
@@ -11,16 +21,6 @@ Examples:
 - Bitlocker Encryption Method
 - Windows Services (Startupmode and Running status)
 - Microsoft Defender for Endpoint onboarding status
-
-## The Intune Custom Compliance Repository
-
-This repository contains detection/discovery scripts and JSON files for Microsoft Intune *Custom* comppliance scripts and policies. Each Custom compliance contains the following artifacts.
-
-| Artifact | Description |
-| ---------|-------------|
-| CustomCompliance.md | Description of the custom compliance with references to the detection script and compliance validation JSON file |
-| CustomCompliance-.ps | PowerShell detection script |
-| CustomCompliance-.json |  a JSON file that identifies the settings and value pairs that you want to use for custom compliance.|
 
 ## Intune Custom Compliance Policies and Scripts
 

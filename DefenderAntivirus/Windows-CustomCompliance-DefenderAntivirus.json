@@ -1,0 +1,102 @@
+{
+    "Rules":[ 
+        { 
+           "SettingName":"TamperProtectionEnabled",
+           "Operator":"IsEquals",
+           "DataType":"Boolean",
+           "Operand":"true",
+           "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-worldwide",
+           "RemediationStrings":[ 
+              { 
+                 "Language":"en_US",
+                 "Title":"Tamperprotection must be enabled. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to enable Tamper Protection"
+              }
+           ]
+        },
+        { 
+         "SettingName":"CloudProtection",
+         "Operator":"IsEquals",
+         "DataType":"Int64",
+         "Operand":"2",
+         "MoreInfoUrl":"https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender?WT.mc_id=Portal-fx#allowcloudprotection",
+         "RemediationStrings":[ 
+            { 
+               "Language":"en_US",
+               "Title":"Cloud Protection must be enabled. Value discovered was {ActualValue}.",
+               "Description": "Make sure to enable Cloud Protection"
+            }
+         ]
+      },        
+        { 
+            "SettingName":"RealTimeProtectionEnabled",
+            "Operator":"IsEquals",
+            "DataType":"Boolean",
+            "Operand":"true",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus?view=o365-worldwide",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Realtime protection must be enabled. Value discovered was {ActualValue}.",
+                  "Description": "Make sure to enable Realtime protection"
+               }
+            ]
+         },
+         { 
+            "SettingName":"AntivirusEnabled",
+            "Operator":"IsEquals",
+            "DataType":"Boolean",
+            "Operand":"true",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Microsoft Windows Defender Antivirus must be enabled. Value discovered was {ActualValue}.",
+                  "Description": "Make sure to enable Microsoft Defender Antivirus"
+               }
+            ]
+         },
+         { 
+            "SettingName":"CloudExtendedTimeout",
+            "Operator":"IsEquals",
+            "DataType":"Int64",
+            "Operand":"50",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-cloud-block-timeout-period-microsoft-defender-antivirus?view=o365-worldwide",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Cloud extended timeout must be set to 50. Value discovered was {ActualValue}.",
+                  "Description": "Make sure to enable and configure the cloud extended timeout"
+               }
+            ]
+         },
+         { 
+            "SettingName":"CloudBlockLevel",
+            "Operator":"GreaterEquals",
+            "DataType":"Int64",
+            "Operand":"2",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype?view=graph-rest-1.0",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Cloud block level must be enabled and set to High or stronger value. Value discovered was {ActualValue}.",
+                  "Description": "Make sure to enable and configure the cloud block level"
+               }
+            ]
+         },
+         { 
+            "SettingName":"NetworkProtectionEnabled",
+            "Operator":"IsEquals",
+            "DataType":"Int64",
+            "Operand":"1",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/network-protection?view=o365-worldwide",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Network protection must be enabled. Value discovered was {ActualValue}.",
+                  "Description": "Make sure to enable network protection"
+               }
+            ]
+         }
+     ]
+    }

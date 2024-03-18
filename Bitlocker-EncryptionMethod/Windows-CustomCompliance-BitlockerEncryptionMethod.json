@@ -1,0 +1,18 @@
+{
+"Rules":[ 
+    { 
+       "SettingName":"EncryptionMethod",
+       "Operator":"IsEquals",
+       "DataType":"Int64",
+       "Operand":7,
+       "MoreInfoUrl":"https://learn.microsoft.com/en-us/mem/intune/protect/encrypt-devices",
+       "RemediationStrings":[ 
+          { 
+             "Language": "en_US",
+             "Title": "Bitlocker Encryption Method. Value discovered was {ActualValue}.",
+             "Description": "Bitlocker Encryption Method is not set as required"
+          }
+       ]
+    }
+ ]
+}

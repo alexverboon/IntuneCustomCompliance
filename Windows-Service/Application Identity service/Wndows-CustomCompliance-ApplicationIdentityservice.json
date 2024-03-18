@@ -1,0 +1,32 @@
+{
+    "Rules":[ 
+        { 
+           "SettingName":"ServiceState",
+           "Operator":"IsEquals",
+           "DataType":"Int64",
+           "Operand":4,
+           "MoreInfoUrl":"https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/applocker/configure-the-application-identity-service",
+           "RemediationStrings":[ 
+              { 
+                 "Language": "en_US",
+                 "Title": "Application Identity service status must be running. Value discovered was {ActualValue}.",
+                 "Description": "Application Identity service must be running"
+              }
+           ]
+        },
+        { 
+         "SettingName":"ServiceStartupMode",
+         "Operator":"IsEquals",
+         "DataType":"Int64",
+         "Operand":2,
+         "MoreInfoUrl":"https://learn.microsoft.com/en-us/windows/security/application-security/application-control/windows-defender-application-control/applocker/configure-the-application-identity-service",
+         "RemediationStrings":[ 
+            { 
+               "Language": "en_US",
+               "Title": "Application Identity service startup must be automatic. Value discovered was {ActualValue}.",
+               "Description": "Application Identity service must startup type must be set to Automatic"
+            }
+         ]
+      }
+     ]
+    }

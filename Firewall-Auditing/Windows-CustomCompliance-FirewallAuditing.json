@@ -1,0 +1,32 @@
+{
+    "Rules":[ 
+        { 
+           "SettingName":"FilteringPlatformPacketDrop",
+           "Operator":"IsEquals",
+           "DataType":"string",
+           "Operand":"Failure",
+           "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/host-firewall-reporting?view=o365-worldwide",
+           "RemediationStrings":[ 
+              { 
+                 "Language":"en_US",
+                 "Title":"Filtering Platform Packet Drop failure events must be enabled. Value discovered was {ActualValue}.",
+                 "Description": "For Microsoft Defender portal to start receiving the data, you must enable Audit Events for Windows Defender Firewall with Advanced Security"
+              }
+           ]
+        },
+        { 
+            "SettingName":"FilteringPlatformConnection",
+            "Operator":"IsEquals",
+            "DataType":"String",
+            "Operand":"Failure",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/host-firewall-reporting?view=o365-worldwide",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Filtering Platform Connection failure events must be enabled. Value discovered was {ActualValue}.",
+                  "Description": "For Microsoft Defender portal to start receiving the data, you must enable Audit Events for Windows Defender Firewall with Advanced Security"
+               }
+            ]
+         }
+     ]
+    }

@@ -1,0 +1,46 @@
+{
+    "Rules":[ 
+        { 
+           "SettingName":"DefenderExclusionsPath",
+           "Operator":"IsEquals",
+           "DataType":"Boolean",
+           "Operand":"true",
+           "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus?view=o365-worldwide#processes",
+           "RemediationStrings":[ 
+              { 
+                 "Language":"en_US",
+                 "Title":"Defender exclusion paths must not contain certain values Value discovered was {ActualValue}.",
+                 "Description": "To avoid performance and security issues, you must exclude certain files and processes from Microsoft Defender Antivirus scans. For more information, see the Common exclusion mistakes in Microsoft Defender Antivirus article."
+              }
+           ]
+        },
+        { 
+            "SettingName":"DefenderExclusiDefenderExclusionsExtensiononsPath",
+            "Operator":"IsEquals",
+            "DataType":"Boolean",
+            "Operand":"true",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus?view=o365-worldwide#processes",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Defender exclusion paths must not contain certain values Value discovered was {ActualValue}.",
+                  "Description": "To avoid performance and security issues, you must exclude certain files and processes from Microsoft Defender Antivirus scans. For more information, see the Common exclusion mistakes in Microsoft Defender Antivirus article."
+               }
+            ]
+         },
+         { 
+            "SettingName":"DefenderExclusionsProcess",
+            "Operator":"IsEquals",
+            "DataType":"Boolean",
+            "Operand":"true",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus?view=o365-worldwide#processes",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Defender exclusion paths must not contain certain values Value discovered was {ActualValue}.",
+                  "Description": "To avoid performance and security issues, you must exclude certain files and processes from Microsoft Defender Antivirus scans. For more information, see the Common exclusion mistakes in Microsoft Defender Antivirus article."
+               }
+            ]
+         }
+     ]
+    }

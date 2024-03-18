@@ -14,7 +14,7 @@ Examples:
 
 ## The Intune Custom Compliance Repository
 
-This repository contains detection and discovery scripts for Microsoft Intune *Custom* comppliance policies. Each Custom compliance contains the following artifacts.
+This repository contains detection/discovery scripts and JSON files for Microsoft Intune *Custom* comppliance scripts and policies. Each Custom compliance contains the following artifacts.
 
 | Artifact | Description |
 | ---------|-------------|
